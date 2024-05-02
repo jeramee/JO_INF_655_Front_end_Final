@@ -1,0 +1,219 @@
+.edit-profile-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.edit-profile-container1 {
+  flex: 1;
+  height: auto;
+  display: flex;
+  align-self: stretch;
+  align-items: stretch;
+  flex-direction: row;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+}
+.edit-profile-container2 {
+  flex: 1;
+  width: 320px;
+  display: flex;
+  align-self: stretch;
+  margin-top: 0px;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixunits);
+  padding-bottom: var(--dl-space-space-sixunits);
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGZvb2R8ZW58MHx8fHwxNzEyOTc0OTU4fDA&ixlib=rb-4.0.3&q=80&w=400');
+  background-position: center;
+}
+.edit-profile-container3 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  height: 1098px;
+  display: flex;
+  align-self: stretch;
+  margin-top: 0px;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: var(--dl-space-space-fourunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: 0px;
+  padding-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: #90c98d;
+}
+.edit-profile-container4 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: 0px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.edit-profile-text {
+  align-self: center;
+  margin-top: 0px;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+}
+.edit-profile-image {
+  width: 200px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.edit-profile-submit {
+  font-size: 15px;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  padding-top: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.edit-profile-form {
+  gap: var(--dl-space-space-oneandhalfunits);
+  height: 607px;
+  display: flex;
+  align-self: stretch;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.edit-profile-text1 {
+  margin-top: 0px;
+  margin-left: var(--dl-space-space-unit);
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.edit-profile-textinput {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.edit-profile-text2 {
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+}
+.edit-profile-textinput1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.edit-profile-text3 {
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-unit);
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.edit-profile-textinput2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.edit-profile-text4 {
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+}
+.edit-profile-textinput3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.edit-profile-text5 {
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+}
+.edit-profile-textinput4 {
+  margin-top: 0px;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.edit-profile-submit1 {
+  font-size: 15px;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  padding-top: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  margin-bottom: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .edit-profile-container3 {
+    height: 1133px;
+  }
+  .edit-profile-submit {
+    margin-top: var(--dl-space-space-unit);
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    margin-bottom: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .edit-profile-form {
+    height: 778px;
+    margin-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .edit-profile-textinput4 {
+    margin-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .edit-profile-submit1 {
+    margin-top: var(--dl-space-space-twounits);
+    margin-left: var(--dl-space-space-twounits);
+    padding-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    margin-bottom: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 767px) {
+  .edit-profile-container4 {
+    margin-top: var(--dl-space-space-threeunits);
+  }
+  .edit-profile-form {
+    margin-bottom: 0px;
+  }
+  .edit-profile-submit1 {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .edit-profile-container3 {
+    margin-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .edit-profile-textinput {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .edit-profile-textinput1 {
+    padding-left: 0rem;
+  }
+  .edit-profile-textinput2 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .edit-profile-textinput3 {
+    padding-left: 0rem;
+  }
+  .edit-profile-textinput4 {
+    padding-left: 0rem;
+  }
+}

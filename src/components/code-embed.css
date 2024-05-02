@@ -1,0 +1,10 @@
+.code-embed-container {
+  display: flex;
+  position: relative;
+}
+.code-embed-container1 {
+  align-self: stretch;
+}
+.code-embed-container2 {
+  display: contents;
+}

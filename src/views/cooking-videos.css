@@ -1,0 +1,735 @@
+.cooking-videos-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.cooking-videos-hero {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-container01 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cooking-videos-hero-heading {
+  max-width: 800px;
+  text-align: center;
+}
+.cooking-videos-hero-sub-heading {
+  font-size: 18px;
+  text-align: center;
+}
+.cooking-videos-btn-group {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.cooking-videos-gallery {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-gallery1 {
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-gap: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a b b" "a b b" "a c d" "a c d"  "e e d" "e e f" "e e f";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.cooking-videos-container02 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 1;
+  grid-area: a;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1586197103709-a0b1f31b76ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxMzEyNjkyM3w&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+}
+.cooking-videos-container02:hover {
+  transform: scale(0.98);
+}
+.cooking-videos-container03 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cooking-videos-container04 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: b;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1514516702655-8d42ae4e8f89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxMzEyNjkyM3w&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+}
+.cooking-videos-container04:hover {
+  transform: scale(0.98);
+}
+.cooking-videos-container05 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cooking-videos-container06 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: c;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1656781798811-9d85d47581aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxMzEyNjkyM3w&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+}
+.cooking-videos-container06:hover {
+  transform: scale(0.98);
+}
+.cooking-videos-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: d;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1632665085089-ec6ae2f9431e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxMzEyNjkyNHw&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+}
+.cooking-videos-container07:hover {
+  transform: scale(0.98);
+}
+.cooking-videos-container08 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: e;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1615458692470-dd8e7cb6e7d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxMzEyNjkyNHw&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+}
+.cooking-videos-container08:hover {
+  transform: scale(0.98);
+}
+.cooking-videos-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: f;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1541809570-cce873416d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxMzEyNjkyNHw&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+}
+.cooking-videos-container09:hover {
+  transform: scale(0.98);
+}
+.cooking-videos-features {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-features-container {
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-features1 {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
+  justify-content: flex-start;
+}
+.cooking-videos-container10 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cooking-videos-features-heading {
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.cooking-videos-features-sub-heading {
+  font-size: 18px;
+  text-align: center;
+}
+.cooking-videos-container11 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-space-space-oneandhalfunits);
+  grid-template-columns: 1fr 1fr;
+}
+.cooking-videos-gallery2 {
+  width: auto;
+  height: 1125px;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: center;
+}
+.cooking-videos-gallery3 {
+  width: auto;
+  display: grid;
+  grid-gap: var(--dl-space-space-unit);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: stretch;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a b b" "a b b" "a c d" "a c d"  "e e d" "e e f" "e e f";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.cooking-videos-container12 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-left: var(--dl-space-space-threeunits);
+  margin-right: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+}
+.cooking-videos-container13 {
+  flex: 0 0 auto;
+  height: 500px;
+  margin: var(--dl-space-space-unit);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-container14 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+  margin: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cooking-videos-video {
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  align-self: center;
+}
+.cooking-videos-navlink {
+  color: var(--dl-color-primary-300);
+  font-size: 22px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline none;
+}
+.cooking-videos-container15 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+  margin: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cooking-videos-video1 {
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  align-self: center;
+}
+.cooking-videos-navlink1 {
+  color: var(--dl-color-primary-300);
+  font-size: 22px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline none;
+}
+.cooking-videos-container16 {
+  flex: 0 0 auto;
+  height: 500px;
+  margin: var(--dl-space-space-unit);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-container17 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+  margin: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cooking-videos-video2 {
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  align-self: center;
+}
+.cooking-videos-navlink2 {
+  color: var(--dl-color-primary-300);
+  font-size: 22px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline none;
+}
+.cooking-videos-container18 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+  margin: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cooking-videos-video3 {
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  align-self: center;
+}
+.cooking-videos-navlink3 {
+  color: var(--dl-color-primary-300);
+  font-size: 22px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline none;
+}
+.cooking-videos-banner {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-banner1 {
+  align-self: center;
+}
+.cooking-videos-banner-heading {
+  align-self: center;
+  text-align: center;
+}
+.cooking-videos-banner-sub-heading {
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.cooking-videos-banner-button {
+  align-self: center;
+}
+.cooking-videos-faq {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-videos-faq1 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-fourunits);
+}
+.cooking-videos-container19 {
+  display: flex;
+  max-width: 35%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cooking-videos-text56 {
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.cooking-videos-text57 {
+  text-align: left;
+}
+.cooking-videos-container20 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media(max-width: 991px) {
+  .cooking-videos-hero1 {
+    flex-direction: column;
+  }
+  .cooking-videos-container01 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-right: 0px;
+  }
+  .cooking-videos-hero-heading {
+    text-align: center;
+  }
+  .cooking-videos-hero-sub-heading {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .cooking-videos-gallery1 {
+    grid-gap: var(--dl-space-space-unit);
+  }
+  .cooking-videos-features-sub-heading {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .cooking-videos-gallery2 {
+    width: auto;
+    align-self: stretch;
+  }
+  .cooking-videos-gallery3 {
+    grid-gap: var(--dl-space-space-unit);
+  }
+  .cooking-videos-container12 {
+    width: auto;
+    margin-left: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+  }
+  .cooking-videos-video {
+    width: 400px;
+    height: 400px;
+  }
+  .cooking-videos-video1 {
+    width: 400px;
+    height: 400px;
+  }
+  .cooking-videos-video2 {
+    width: 400px;
+    height: 400px;
+  }
+  .cooking-videos-video3 {
+    width: 400px;
+    height: 400px;
+  }
+  .cooking-videos-banner-sub-heading {
+    max-width: 100%;
+  }
+  .cooking-videos-text57 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+}
+@media(max-width: 767px) {
+  .cooking-videos-hero1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-hero-sub-heading {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .cooking-videos-gallery1 {
+    height: auto;
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    flex-direction: column;
+  }
+  .cooking-videos-container03 {
+    height: 220px;
+  }
+  .cooking-videos-container05 {
+    height: 220px;
+  }
+  .cooking-videos-features1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-features-sub-heading {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .cooking-videos-container11 {
+    grid-template-columns: 1fr;
+  }
+  .cooking-videos-gallery2 {
+    height: 2095px;
+    margin-top: 0px;
+    padding-top: 0px;
+    flex-direction: row;
+  }
+  .cooking-videos-gallery3 {
+    height: 2100px;
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    align-self: stretch;
+    flex-direction: column;
+  }
+  .cooking-videos-container12 {
+    flex: 0;
+    height: 4000px;
+    margin-left: var(--dl-space-space-threeunits);
+    padding-left: 0px;
+  }
+  .cooking-videos-container13 {
+    height: 1000px;
+    margin-top: var(--dl-space-space-unit);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cooking-videos-container14 {
+    gap: var(--dl-space-space-oneandhalfunits);
+    flex: 1;
+    width: auto;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+  .cooking-videos-video {
+    width: auto;
+    height: 400px;
+    align-self: stretch;
+    margin-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-container15 {
+    gap: var(--dl-space-space-oneandhalfunits);
+    flex: 1;
+    width: auto;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+  .cooking-videos-video1 {
+    width: auto;
+    height: 400px;
+    align-self: stretch;
+    margin-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-container16 {
+    height: 1000px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cooking-videos-container17 {
+    gap: var(--dl-space-space-oneandhalfunits);
+    flex: 1;
+    width: auto;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+  .cooking-videos-video2 {
+    width: auto;
+    align-self: stretch;
+    margin-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-container18 {
+    gap: var(--dl-space-space-oneandhalfunits);
+    flex: 1;
+    width: auto;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+  .cooking-videos-video3 {
+    width: auto;
+    align-self: stretch;
+    margin-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-banner1 {
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-fiveunits);
+  }
+  .cooking-videos-banner-sub-heading {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .cooking-videos-faq1 {
+    flex-direction: column;
+  }
+  .cooking-videos-container19 {
+    max-width: 100%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .cooking-videos-text57 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .cooking-videos-hero1 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-container01 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .cooking-videos-btn-group {
+    flex-direction: column;
+  }
+  .cooking-videos-gallery1 {
+    width: 100%;
+    padding: var(--dl-space-space-unit);
+  }
+  .cooking-videos-features1 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-gallery3 {
+    width: 100%;
+    padding-top: 0px;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .cooking-videos-container12 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .cooking-videos-container13 {
+    width: 450px;
+    align-self: stretch;
+    margin-top: 0px;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cooking-videos-container14 {
+    gap: var(--dl-space-space-halfunit);
+    width: auto;
+    height: 100%;
+    align-self: stretch;
+  }
+  .cooking-videos-video {
+    flex: 1;
+    width: auto;
+    align-self: stretch;
+    margin-right: 0px;
+  }
+  .cooking-videos-container15 {
+    gap: var(--dl-space-space-halfunit);
+  }
+  .cooking-videos-video1 {
+    margin-right: 0px;
+  }
+  .cooking-videos-container16 {
+    width: 450px;
+    align-self: center;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-between;
+  }
+  .cooking-videos-container17 {
+    gap: var(--dl-space-space-halfunit);
+  }
+  .cooking-videos-video2 {
+    margin-right: 0px;
+  }
+  .cooking-videos-container18 {
+    gap: var(--dl-space-space-halfunit);
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .cooking-videos-video3 {
+    margin-right: 0px;
+  }
+  .cooking-videos-banner1 {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

@@ -1,0 +1,17 @@
+.upload-container {
+  display: flex;
+  position: relative;
+}
+.upload-upload {
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .upload-upload {
+    fill: var(--dl-color-gray-white);
+    color: var(--dl-color-gray-white);
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: var(--dl-color-gray-black);
+  }
+}

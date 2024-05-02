@@ -1,0 +1,158 @@
+.contact-us-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us-container1 {
+  flex: 1;
+  height: auto;
+  display: flex;
+  align-self: stretch;
+  align-items: stretch;
+  flex-direction: row;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+}
+.contact-us-container2 {
+  flex: 1;
+  width: 320px;
+  display: flex;
+  align-self: stretch;
+  margin-top: 0px;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixunits);
+  padding-bottom: var(--dl-space-space-sixunits);
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGZvb2R8ZW58MHx8fHwxNzEyOTc0OTU4fDA&ixlib=rb-4.0.3&q=80&w=400');
+  background-position: center;
+}
+.contact-us-container3 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  height: 711px;
+  display: flex;
+  align-self: stretch;
+  margin-top: 0px;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: var(--dl-space-space-fourunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: 0px;
+  padding-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: #90c98d;
+}
+.contact-us-form {
+  gap: var(--dl-space-space-oneandhalfunits);
+  height: 607px;
+  display: flex;
+  align-self: stretch;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contact-us-text {
+  margin-top: 0px;
+  margin-left: var(--dl-space-space-unit);
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.contact-us-textinput {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.contact-us-text1 {
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+}
+.contact-us-textinput1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.contact-us-text2 {
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.contact-us-textinput2 {
+  height: 261px;
+  align-self: stretch;
+  margin-top: 0px;
+  text-align: center;
+  margin-right: 0px;
+  padding-left: 0.5rem;
+  margin-bottom: 0px;
+  padding-right: 0.5rem;
+}
+.contact-us-submit {
+  font-size: 15px;
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  margin-bottom: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .contact-us-container3 {
+    height: 1133px;
+  }
+  .contact-us-form {
+    height: 778px;
+    margin-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .contact-us-submit {
+    margin-top: var(--dl-space-space-twounits);
+    margin-left: var(--dl-space-space-twounits);
+    padding-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    margin-bottom: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 767px) {
+  .contact-us-container3 {
+    height: 801px;
+  }
+  .contact-us-form {
+    margin-bottom: 0px;
+  }
+  .contact-us-submit {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .contact-us-container3 {
+    margin-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .contact-us-textinput {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .contact-us-textinput1 {
+    padding-left: 0rem;
+  }
+  .contact-us-textinput2 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
