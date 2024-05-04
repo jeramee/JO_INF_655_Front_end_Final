@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'

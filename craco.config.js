@@ -1,13 +1,12 @@
-const { POSTCSS_MODES } = require("@craco/craco");
-
 module.exports = {
+  reactScriptsVersion: "react-scripts",
   style: {
-    postcss: {
-      mode: POSTCSS_MODES.file,
-      plugins: [
-        require("tailwindcss"),
-        require("autoprefixer"),
-      ],
+    css: {
+      loaderOptions: () => {
+        return {
+          url: false,
+        };
+      },
     },
   },
 };
