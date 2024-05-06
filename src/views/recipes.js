@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import Header from '../components/header'
 import Header3 from '../components/header3'
 import Footer from '../components/footer'
-import './recipe-ok.css'
+import './recipe.css'
 
 const Recipes = (props) => {
   return (
@@ -19,36 +19,36 @@ const Recipes = (props) => {
       </Helmet>
       <Header></Header>
       <Header3></Header3>
-      <div className="recipe-ok-hero heroContainer">
-        <div className="recipe-ok-container1">
-          <div className="recipe-ok-container2">
-            <h1 className="recipe-ok-hero-heading">
-              <span className="recipe-ok-text06">Recipes</span>
+      <div className="recipe-hero heroContainer">
+        <div className="recipe-container1">
+          <div className="recipe-container2">
+            <h1 className="recipe-hero-heading">
+              <span className="recipe-text06">Recipes</span>
               <br></br>
-              <span className="recipe-ok-text08">Search by categories</span>
+              <span className="recipe-text08">Search by categories</span>
               <br></br>
             </h1>
-            <div className="recipe-ok-container3">
-              <button type="button" className="recipe-ok-button button">
+            <div className="recipe-container3">
+              <button type="button" className="recipe-button button">
                 place
               </button>
             </div>
-            <div className="recipe-ok-container4">
-              <button type="button" className="recipe-ok-button1 button">
+            <div className="recipe-container4">
+              <button type="button" className="recipe-button1 button">
                 {' '}
                 ingredients
               </button>
             </div>
-            <div className="recipe-ok-container5">
-              <button type="button" className="recipe-ok-button2 button">
+            <div className="recipe-container5">
+              <button type="button" className="recipe-button2 button">
                 goals
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="recipe-ok-features">
-        <div className="recipe-ok-features-container featuresContainer">
+      <div className="recipe-features">
+        <div className="recipe-features-container featuresContainer">
           <video
             src="https://youtu.be/GPBe-oYlG1A?feature=shared"
             loop="true"
@@ -57,7 +57,7 @@ const Recipes = (props) => {
             preload="none"
             autoPlay="true"
             controls="true"
-            className="recipe-ok-video"
+            className="recipe-video"
           ></video>
           <video
             src="https://youtu.be/GPBe-oYlG1A?feature=shared"
@@ -67,7 +67,7 @@ const Recipes = (props) => {
             preload="none"
             autoPlay="true"
             controls="true"
-            className="recipe-ok-video1"
+            className="recipe-video1"
           ></video>
           <video
             src="https://youtu.be/GPBe-oYlG1A?feature=shared"
@@ -77,7 +77,7 @@ const Recipes = (props) => {
             preload="none"
             autoPlay="true"
             controls="true"
-            className="recipe-ok-video2"
+            className="recipe-video2"
           ></video>
         </div>
       </div>

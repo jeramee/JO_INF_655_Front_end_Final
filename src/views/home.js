@@ -5,12 +5,12 @@ import Header from '../components/header';
 import Header3 from '../components/header3';
 import Footer from '../components/footer';
 import GalleryCard1 from '../components/gallery-card1';
-import './home-ok.css';
+import './home.css';
 
 const Home = (props) => {
   useEffect(() => {
     // Check if a font is being applied
-    const startHereLink = document.querySelector('.home-ok-start-here');
+    const startHereLink = document.querySelector('.home-start-here');
     if (startHereLink) {
       // Log a message indicating that the element is found
       console.log('Start here link found:', startHereLink);
@@ -28,7 +28,7 @@ const Home = (props) => {
   }, []); // Empty dependency array ensures this effect runs only once after the component mounts
   
   return (
-    <div className="home-ok-container">
+    <div className="home-container">
       <Helmet>
         <title>Home - I Want Food</title>
         <meta property="og:title" content="Home - I Want Food" />
@@ -37,9 +37,9 @@ const Home = (props) => {
       <Header3></Header3>
       
       <div className="home-container">
-        <div className="home-ok-container1">
-          <div className="home-ok-container2">
-            <span className="home-ok-hero-sub-heading bodyLarge">
+        <div className="home-container1">
+          <div className="home-container2">
+            <span className="home-hero-sub-heading bodyLarge">
               <span>
                 <span>
                   <span>
@@ -105,15 +105,15 @@ const Home = (props) => {
                 </span>
               </span>
             </span>
-            <h1 className="home-ok-hero-heading">
-              <span className="home-ok-text14">
+            <h1 className="home-hero-heading">
+              <span className="home-text14">
                 Think about time when arrive cave. Have few things: fire, meat,
                 plant. But no know how to start! Confused like mammoth in
                 snowstorm. What do?
               </span>
               <span> 🤔</span>
             </h1>
-            <span className="home-ok-text16">
+            <span className="home-text16">
               What caveman is saying: &quot;Sometimes when I get home, I look at
               the few ingredients I’ve got and just can’t figure out where to
               start with cooking. It’s like my brain just goes blank&quot;
@@ -121,11 +121,11 @@ const Home = (props) => {
             <img
               alt="pastedImage"
               src="/external/pastedimage-8qme-1100w.png"
-              className="home-ok-pasted-image"
+              className="home-pasted-image"
             />
-            <Link to="/ingredients-ok" className="home-ok-start-here">
-              <div className="home-ok-btn-group">
-                <button className="home-ok-hero-button buttonFilled">
+            <Link to="/ingredients-ok" className="home-start-here">
+              <div className="home-btn-group">
+                <button className="home-hero-button buttonFilled">
                   Start here
                 </button>
               </div>
@@ -133,24 +133,24 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-ok-hero1"></div>
-      <div className="home-ok-features">
+      <div className="home-hero1"></div>
+      <div className="home-features">
         <div className="featuresContainer">
           <video
             src
             poster="https://play.teleporthq.io/static/svg/videoposter.svg"
-            className="home-ok-video"
+            className="home-video"
           ></video>
-          <div className="home-ok-features1">
-            <div className="home-ok-container3">
-              <span className="home-ok-text17">
-                <span className="home-ok-text18">All we have to offer</span>
+          <div className="home-features1">
+            <div className="home-container3">
+              <span className="home-text17">
+                <span className="home-text18">All we have to offer</span>
                 <br className="Heading"></br>
               </span>
-              <h2 className="home-ok-features-heading heading1">
+              <h2 className="home-features-heading heading1">
                 So go out of the cave and start to dig
               </h2>
-              <span className="home-ok-features-sub-heading bodyLarge">
+              <span className="home-features-sub-heading bodyLarge">
                 <span>
                   <span>
                     <span>
@@ -217,9 +217,9 @@ const Home = (props) => {
                 </span>
               </span>
             </div>
-            <div className="home-ok-container4">
-              <div className="home-ok-steps">
-                <div className="home-ok-gallery">
+            <div className="home-container4">
+              <div className="home-steps">
+                <div className="home-gallery">
                   <GalleryCard1
                     title="USA"
                     imageAlt=" "

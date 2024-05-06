@@ -7,7 +7,7 @@ import Header from '../components/header' // Import the Header component
 import Header3 from '../components/header3'
 import FeatureCard from '../components/feature-card'
 import Footer from '../components/footer'
-import './places-ok.css'
+import './places.css'
 
 const Places = (props) => {
   return (
