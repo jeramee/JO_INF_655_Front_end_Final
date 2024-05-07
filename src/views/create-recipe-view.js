@@ -30,7 +30,7 @@ const CreateRecipeView = (props) => {
         <div className="create-recipe-view-gallery1">
           <img
             alt="image"
-            src="https://play.teleporthq.io/static/svg/default-img.svg"
+            /* src="https://play.teleporthq.io/static/svg/default-img.svg" */
             className="create-recipe-view-image"
           />
           <div className="create-recipe-view-container1">

@@ -229,7 +229,7 @@ const CookingVideos = (props) => {
               <div className="cooking-videos-container14">
                 <video
                   src
-                  poster="https://play.teleporthq.io/static/svg/videoposter.svg"
+                  /* poster="https://play.teleporthq.io/static/svg/videoposter.svg" */
                   className="cooking-videos-video"
                 ></video>
                 <Link to="/videos" className="cooking-videos-navlink">
@@ -240,7 +240,7 @@ const CookingVideos = (props) => {
               <div className="cooking-videos-container15">
                 <video
                   src
-                  poster="https://play.teleporthq.io/static/svg/videoposter.svg"
+                  /* poster="https://play.teleporthq.io/static/svg/videoposter.svg" */
                   className="cooking-videos-video1"
                 ></video>
                 <Link to="/videos" className="cooking-videos-navlink1">
@@ -253,7 +253,7 @@ const CookingVideos = (props) => {
               <div className="cooking-videos-container17">
                 <video
                   src
-                  poster="https://play.teleporthq.io/static/svg/videoposter.svg"
+                  /* poster="https://play.teleporthq.io/static/svg/videoposter.svg" */
                   className="cooking-videos-video2"
                 ></video>
                 <Link to="/videos" className="cooking-videos-navlink2">
@@ -264,7 +264,7 @@ const CookingVideos = (props) => {
               <div className="cooking-videos-container18">
                 <video
                   src
-                  poster="https://play.teleporthq.io/static/svg/videoposter.svg"
+                  /* poster="https://play.teleporthq.io/static/svg/videoposter.svg" */
                   className="cooking-videos-video3"
                 ></video>
                 <Link to="/videos" className="cooking-videos-navlink3">

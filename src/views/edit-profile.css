@@ -15,7 +15,7 @@
   flex-direction: row;
   background-size: cover;
   justify-content: center;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  /* background-image: url("https://play.teleporthq.io/static/svg/default-img.svg"); */
 }
 .edit-profile-container2 {
   flex: 1;

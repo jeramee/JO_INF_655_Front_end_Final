@@ -87,7 +87,7 @@ Header.defaultProps = {
   text2: 'Recipes',
   text4: 'Restraunts',
   text8: 'Login',
-  imageSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
+  //imageSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
 }
 
 Header.propTypes = {

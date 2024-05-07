@@ -17,7 +17,7 @@ const DynamicIngredientView = () => {
 
   const fetchSearchResults = async () => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${searchQuery}&number=10&apiKey=c9b3df17758d4e7b9c820813fcc63124`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${searchQuery}&number=10&apiKey=your_api_key_here`);
       const data = await response.json();
       setSearchResults(data);
     } catch (error) {
@@ -27,7 +27,7 @@ const DynamicIngredientView = () => {
 
   const handleRecipeClick = async (recipeId) => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=c9b3df17758d4e7b9c820813fcc63124`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=your_api_key_here`);
       const data = await response.json();
       setIngredientDetails(data);
     } catch (error) {

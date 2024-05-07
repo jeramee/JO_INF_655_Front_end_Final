@@ -134,7 +134,7 @@ const Home = (props) => {
         <div className="featuresContainer">
           <video
             src
-            poster="https://play.teleporthq.io/static/svg/videoposter.svg"
+            /* poster="https://play.teleporthq.io/static/svg/videoposter.svg" */
             className="home-video"
           ></video>
           <div className="home-features1">
