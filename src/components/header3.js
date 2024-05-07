@@ -158,7 +158,7 @@ Header3.defaultProps = {
   text5: 'Restaurants',
   text6: 'Ingredients',
   text7: 'Recipes',
-  text8: 'Places\n',
+  text8: 'Places',
   text9: 'Content',
 }
 

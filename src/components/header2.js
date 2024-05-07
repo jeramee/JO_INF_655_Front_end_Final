@@ -14,14 +14,14 @@ const Header2 = (props) => {
             <Link to="/" className="header2-navlink">
               {props.text}
             </Link>
-            <Link to="/ingredients-ok" className="header2-navlink1">
+            <Link to="/ingredients" className="header2-navlink1">
               {props.text1}
             </Link>
-            <Link to="/recipe-ok" className="header2-navlink2">
+            <Link to="/recipe" className="header2-navlink2">
               {props.text2}
             </Link>
             <span className="header2-text">{props.text3}</span>
-            <Link to="/places-ok" className="header2-navlink3">
+            <Link to="/places" className="header2-navlink3">
               {props.text4}
             </Link>
             <img

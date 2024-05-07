@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
-import NavigationLinks1 from './navigation-links1'
 import './header.css'
 
 const Header = (props) => {
@@ -25,9 +24,6 @@ const Header = (props) => {
           </Link>
           <Link to="/restaurants" className="header-navlink04">
             {props.text4}
-          </Link>
-          <Link to="/places" className="header-navlink05">
-            {props.text5}
           </Link>
           <Link to="/ingredients" className="header-navlink06">
             {props.text6}
@@ -74,7 +70,6 @@ const Header = (props) => {
               </svg>
             </div>
           </div>
-          <NavigationLinks1 rootClassName="rootClassName9"></NavigationLinks1>
         </div>
       </div>
     </header>
@@ -86,11 +81,10 @@ Header.defaultProps = {
   text: 'Profile',
   imageAlt: 'image',
   text3: 'Places',
-  text5: 'Places',
   text1: 'Home',
-  text6: 'Ingredient Search',
+  text6: 'Ingredients',
   text7: 'Upload',
-  text2: 'Recipe search',
+  text2: 'Recipes',
   text4: 'Restraunts',
   text8: 'Login',
   imageSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
@@ -101,7 +95,6 @@ Header.propTypes = {
   text: PropTypes.string,
   imageAlt: PropTypes.string,
   text3: PropTypes.string,
-  text5: PropTypes.string,
   text1: PropTypes.string,
   text6: PropTypes.string,
   text7: PropTypes.string,

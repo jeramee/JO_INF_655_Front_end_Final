@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Header from '../components/header';
+import Header3 from '../components/header3';
+import Footer from '../components/footer';
 import { Helmet } from 'react-helmet'
 
-import Header from '../components/header'
-import Header3 from '../components/header3'
-import NavbarInteractive11 from '../components/navbar-interactive11'
-import Footer from '../components/footer'
 import './create-recipe-view.css'
 
 const CreateRecipeView = (props) => {
@@ -20,7 +19,6 @@ const CreateRecipeView = (props) => {
       </Helmet>
       <Header></Header>
       <Header3></Header3>
-      <NavbarInteractive11></NavbarInteractive11>
       <div className="create-recipe-view-hero">
         <div className="create-recipe-view-hero1 heroContainer">
           <span className="create-recipe-view-text">
@@ -366,12 +364,12 @@ const CreateRecipeView = (props) => {
               placeholder="Describe your recipe"
               className="create-recipe-view-textinput2 input"
             />
-            <button
-              type="button"
+            <Link
+              to="/dynamic-recipe-view"
               className="create-recipe-view-start-here button"
             >
               Upload Recipe
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+// dynamic-ingredient-view.js
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Footer from '../components/footer';
@@ -16,21 +17,21 @@ const DynamicIngredientView = () => {
 
   const fetchSearchResults = async () => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/food/ingredients/search?query=${searchQuery}&number=10`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${searchQuery}&number=10&apiKey=c9b3df17758d4e7b9c820813fcc63124`);
       const data = await response.json();
-      setSearchResults(data.results);
+      setSearchResults(data);
     } catch (error) {
       console.error('Error fetching search results:', error);
     }
   };
 
-  const handleIngredientClick = async (id) => {
+  const handleRecipeClick = async (recipeId) => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/food/ingredients/${id}/information`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=c9b3df17758d4e7b9c820813fcc63124`);
       const data = await response.json();
       setIngredientDetails(data);
     } catch (error) {
-      console.error('Error fetching ingredient details:', error);
+      console.error('Error fetching recipe details:', error);
     }
   };
 
@@ -40,7 +41,6 @@ const DynamicIngredientView = () => {
         <title>DynamicIngredientView - Spoonacular Search</title>
         <meta property="og:title" content="DynamicIngredientView - Spoonacular Search" />
       </Helmet>
-      {/* Your header components */}
       <div className="dynamic-ingredient-view-hero">
         <div className="dynamic-ingredient-view-hero1 heroContainer">
           <input
@@ -54,12 +54,21 @@ const DynamicIngredientView = () => {
       <div className="dynamic-ingredient-view-gallery">
         {searchResults.map((result) => (
           <div key={result.id} className="dynamic-ingredient-view-gallery1">
-            <img src={result.image} alt={result.name} />
-            <button onClick={() => handleIngredientClick(result.id)}>View Details</button>
+            <img src={result.image} alt={result.title} />
+            <button onClick={() => handleRecipeClick(result.id)}>View Recipe</button>
+            {/* Display recipe title as clickable link */}
+            <a href="#" onClick={() => handleRecipeClick(result.id)}>{result.title}</a>
           </div>
         ))}
       </div>
-      {/* Additional components for displaying ingredient details */}
+      {ingredientDetails && (
+        <div className="recipe-details">
+          {/* Render recipe details here */}
+          <h2>{ingredientDetails.title}</h2>
+          <img src={ingredientDetails.image} alt={ingredientDetails.title} />
+          <p>{ingredientDetails.instructions}</p>
+        </div>
+      )}
       <Footer />
     </div>
   );

@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @craco/craco@7.0.0-alpha.0
+
+PATH: 
+  C:\tools\ruby31\bin;C:\Python311\;C:\Python311\Scripts\;C:\Windows;C:\Windows\system32;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Java\jdk-18.0.2\bin;D:\Python\Python310\Scripts\;D:\Python\Python310\;C:\Python38\Scripts\;C:\Python38\;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\GNAT\2019\bin;C:\Program Files\Mercurial\;C:\Program Files (x86)\LyX 2.3\Perl\bin;C:\php-8.1.0-Win32-vs16-x64;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x86;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;D:\IronPython 2.7;D:\IronPython 3.4;C:\Program Files\Git\cmd;C:\Program Files\jEdit;C:\Program Files (x86)\SMLNJ\bin\;C:\Users\jeram\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\CMake\bin;C:\Program Files\LLVM\bin;D:\000_AAA\000_AAA_Joeys_Projects\flutter_windows_3.10.1-stable\flutter\bin;C:\Gradle\gradle-7.5\bin;D:\000_Py_ENVs\PDFChatApp\Scripts;C:\HaxeToolkit\haxe;C:\HaxeToolkit\neko;C:\Users\jeram\.pyenv\pyenv-win\bin;C:\Users\jeram\.pyenv\pyenv-win\shims;C:\Python311;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jeram\.cargo\bin;C:\Program Files\Conan\conan;C:\Users\jeram\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\jeram\AppData\Local\Programs\Python\Python37\;C:\Users\jeram\AppData\Local\Microsoft\WindowsApps;C:\Users\jeram\AppData\Local\GitHubDesktop\bin;C:\msys64;C:\Program Files\Notepad++;C:\Program Files\gedit\bin;C:\FPC\3.0.4\bin\i386-win32;C:\cygwin64\bin;C:\KinectRuntime-v2.2_1811\drivers\K4W;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 Tools;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7 Tools;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.2 Tools;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86);C:\Users\jeram\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2;C:\Users\jeram\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\swipl\bin;C:\Users\jeram\.dotnet\tools;C:\Program Files\heroku\bin;C:\Users\jeram\AppData\Local\Yarn\bin;C:\Windows\System32;C:\Program Files (x86)\Nmap;C:\Users\jeram\.dotnet\tools;C:\Users\jeram\AppData\Roaming\npm;C:\Users\jeram\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\xampp\mysql\bin;C:\xampp\php;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.12.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\jeram\AppData\Local\Yarn\Cache\v6\npm-jsonfile-6.1.0-bc55b2634793c679ec6403094eb13698a6ec0aae-integrity\node_modules\jsonfile\LICENSE' -> 'D:\INF 655 Front-end development II\JO_INF_655_Front_end_Final\Final\Final\JO_INF_655_Front_end_Final\node_modules\jsonfile\LICENSE'
+
+npm manifest: 
+  {
+    "name": "i-want-food",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+      "@craco/craco": "^7.0.0-alpha.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "^5.2.0",
+      "react-helmet": "^6.1.0",
+      "prop-types": "15.7.2"
+    },
+    "scripts": {
+      "start": "craco start",
+      "build": "craco build",
+      "test": "craco test --env=jsdom",
+      "eject": "craco eject"
+    },
+    "engines": {
+      "node": "20.x"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "react-scripts": "^5.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

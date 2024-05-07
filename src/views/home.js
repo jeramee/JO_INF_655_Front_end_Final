@@ -123,12 +123,8 @@ const Home = (props) => {
               src="/external/pastedimage-8qme-1100w.png"
               className="home-pasted-image"
             />
-            <Link to="/ingredients-ok" className="home-start-here">
-              <div className="home-btn-group">
-                <button className="home-hero-button buttonFilled">
-                  Start here
-                </button>
-              </div>
+            <Link to="/create-recipe-view" className="home-start-here button">
+              Start here
             </Link>
           </div>
         </div>

@@ -877,6 +877,7 @@
   animation-name: pulse;
   padding-bottom: 32px;
   animation-delay: 0s;
+  text-decoration: none;
   background-image: linear-gradient(315deg, rgb(36, 19, 3) 15%, rgb(106, 86, 7) 31%, rgb(81, 65, 4) 51%, rgb(149, 116, 42) 82%);
   animation-duration: 300ms;
   border-right-width: 1px;

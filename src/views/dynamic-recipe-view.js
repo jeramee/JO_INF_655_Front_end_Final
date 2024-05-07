@@ -1,18 +1,19 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
-
-import Footer from '../components/footer'
+import Header from '../components/header';
+import Header3 from '../components/header3';
+import Footer from '../components/footer';
 import './dynamic-recipe-view.css'
 
 const DynamicRecipeView = (props) => {
   return (
     <div className="dynamic-recipe-view-container">
       <Helmet>
-        <title>DynamicRecipeView - I Want Food</title>
+        <title>DynamicRecipeView - Shoddy Natural Heron</title>
         <meta
           property="og:title"
-          content="DynamicRecipeView - I Want Food"
+          content="DynamicRecipeView - Shoddy Natural Heron"
         />
       </Helmet>
       <Header></Header>
