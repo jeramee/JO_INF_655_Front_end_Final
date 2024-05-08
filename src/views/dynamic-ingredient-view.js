@@ -1,4 +1,3 @@
-// /views/dynamic-ingredient-view.js
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Footer from '../components/footer';
@@ -56,7 +55,12 @@ const DynamicIngredientView = () => {
       <div className="dynamic-ingredient-view-gallery">
         {searchResults.map((result) => (
           <div key={result.id} className="dynamic-ingredient-view-gallery1">
-            <img src={result.image} alt={result.title} />
+            <img 
+              src={result.image} 
+              alt={result.title} 
+              style={{ width: '150%', height: '150%' }} // Increase image size by 50%
+              onClick={() => handleRecipeClick(result.id)} // Trigger handleRecipeClick on click
+            />
             <button onClick={() => handleRecipeClick(result.id)}>View Recipe</button>
             {/* Display recipe title as clickable link */}
             <a href="#" onClick={() => handleRecipeClick(result.id)}>{result.title}</a>

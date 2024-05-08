@@ -5,6 +5,7 @@
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
+    height: 400px;
   }
   
   .dynamic-ingredient-view-hero {
@@ -24,6 +25,15 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(123, 90, 23, 0.71);
+  }
+
+  .dynamic-ingredient-view-hero1 input {
+    /* Adjust the width of the input */
+    width: 80%; 
+    height: 50px; 
+    font-size: 20px; 
+    padding: 10px; 
+    
   }
   
   .dynamic-ingredient-view-text {
