@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Header from '../components/header';
@@ -8,102 +8,19 @@ import GalleryCard1 from '../components/gallery-card1';
 import './home.css';
 
 const Home = (props) => {
-  useEffect(() => {
-    // Check if a font is being applied
-    const startHereLink = document.querySelector('.home-start-here');
-    if (startHereLink) {
-      // Log a message indicating that the element is found
-      console.log('Start here link found:', startHereLink);
-
-      // Add a temporary style to change the font
-      startHereLink.style.fontFamily = 'Arial, sans-serif'; // Change the font to Arial
-
-      // Check if the font has changed
-      const computedFontFamily = window.getComputedStyle(startHereLink).fontFamily;
-      console.log('Computed font family:', computedFontFamily);
-    } else {
-      // Log a message indicating that the element is not found
-      console.log('Start here link not found');
-    }
-  }, []); // Empty dependency array ensures this effect runs only once after the component mounts
-  
   return (
     <div className="home-container">
       <Helmet>
         <title>Home - I Want Food</title>
         <meta property="og:title" content="Home - I Want Food" />
       </Helmet>
-      <Header></Header>
-      <Header3></Header3>
-      
-      <div className="home-container">
+      <Header />
+      <Header3 />
+      <div className="home-hero heroContainer">
         <div className="home-container1">
           <div className="home-container2">
             <span className="home-hero-sub-heading bodyLarge">
-              <span>
-                <span>
-                  <span>
-                    Your one-stop destination for all things food-related
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
+              Your one-stop destination for all things food-related
             </span>
             <h1 className="home-hero-heading">
               <span className="home-text14">
@@ -134,7 +51,7 @@ const Home = (props) => {
         <div className="featuresContainer">
           <video
             src
-            /* poster="https://play.teleporthq.io/static/svg/videoposter.svg" */
+            poster="https://play.teleporthq.io/static/svg/videoposter.svg"
             className="home-video"
           ></video>
           <div className="home-features1">
@@ -226,7 +143,7 @@ const Home = (props) => {
                   <GalleryCard1
                     title="USA"
                     imageSrc="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxmb29kfGVufDB8fHx8MTcxMjg5ODM5MHww&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Hamburguer"
+                    subtitle="Hamburger"
                     rootClassName="rootClassName1"
                   ></GalleryCard1>
                   <GalleryCard1

@@ -18,7 +18,7 @@
   padding-bottom: 0px;
   background-size: cover;
   justify-content: center;
-  background-image: url("/public/external/restaurant_no_focus_smaller-1500w.png");
+  background-image: url("/external/restaurant_no_focus_smaller-1500w.png");
 }
 .restaurants-hero1 {
   padding: 0px;
@@ -97,7 +97,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("/public/external/background_i_want_food-500w.png");
+  background-image: url("/external/background_i_want_food-500w.png");
 }
 .restaurants-container06 {
   display: flex;

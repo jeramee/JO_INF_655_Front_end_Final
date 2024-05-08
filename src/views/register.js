@@ -1,25 +1,42 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { getAuth, GoogleAuthProvider, signInWithPopup, set } from 'firebase/auth';
+import Header from '../components/header';
+import Header3 from '../components/header3';
+import Footer from '../components/footer';
+import './register.css';
 
-import { Helmet } from 'react-helmet'
+const Register = () => {
+  const handleGoogleSignIn = async () => {
+    try {
+      const auth = getAuth(); // Initialize Firebase auth
+      const provider = new GoogleAuthProvider();
+      auth.languageCode = 'it'; // Set user's preferred language (optional)
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      if (user) {
+        const db = firebase.database();
+        const dbRef = db.ref(`users/${user.uid}/profile`);
+        await set(dbRef, {
+          name: user.displayName,
+          email: user.email,
+          photoURL: user.photoURL
+        });
+      }
+    } catch (error) {
+      console.error('Google sign-in error:', error);
+    }
+  };
 
-import Header from '../components/header'
-import Header3 from '../components/header3'
-import Footer from '../components/footer'
-import './register.css'
-
-const Register = (props) => {
   return (
     <div className="register-container">
       <Helmet>
         <title>Register - I Want Food</title>
-        <meta
-          property="og:title"
-          content="Register - I Want Food"
-        />
+        <meta property="og:title" content="Register - I Want Food" />
       </Helmet>
-      <Header></Header>
-      <Header3></Header3>
+      <Header />
+      <Header3 />
       <div className="register-container1">
         <div className="register-container2">
           <div className="register-container3">
@@ -56,15 +73,19 @@ const Register = (props) => {
                 className="input"
               />
             </form>
+            <button onClick={handleGoogleSignIn} className="register-edit buttonFilled">
+              Register with Google
+            </button>
             <Link to="/edit-profile" className="register-edit buttonFilled">
-              Edit
+              Register
             </Link>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
+

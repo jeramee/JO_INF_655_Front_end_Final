@@ -37,17 +37,15 @@
   }
   
   .dynamic-ingredient-view-gallery {
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Display items vertically */
+    align-items: center; /* Center items horizontally */
   }
   
   .dynamic-ingredient-view-gallery1 {
     width: 100%;
-    height: 885px;
+    height: auto; /* Adjust height to be auto */
+    margin-bottom: var(--dl-space-space-unit); /* Add some spacing between each recipe */
     display: grid;
     grid-gap: var(--dl-space-space-unit);
     max-width: var(--dl-size-size-maxwidth);
@@ -61,6 +59,7 @@
     grid-template-areas: "a b b" "a b b" "a c d" "a c d"  "e e d" "e e f" "e e f";
     grid-template-columns: 1fr 1fr 1fr;
   }
+  
   
   .dynamic-ingredient-view-image {
     width: 600px;

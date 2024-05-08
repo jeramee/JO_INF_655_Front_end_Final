@@ -1,24 +1,67 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/header';
 import Header3 from '../components/header3';
-import Footer from '../components/footer';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 
-import './create-recipe-view.css'
+import './create-recipe-view.css';
 
 const CreateRecipeView = (props) => {
+  const [recipeForm, setRecipeForm] = useState({
+    servings: '', // Add other form fields as needed
+  });
+
+  const [recipes, setRecipes] = useState([]);
+
+  const addRecipe = () => {
+    setRecipes([
+      ...recipes,
+      {
+        recipe_name: '',
+        how_long_minutes: '',
+        difficulty: '',
+        servings: '',
+        culture_or_local: ''
+      }
+    ]);
+  };
+
+  const saveRecipes = () => {
+    fetch('/recipes/save-recipes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ recipes })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Recipes saved successfully:', data);
+    })
+    .catch(error => {
+      console.error('Error saving recipes:', error);
+    });
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setRecipeForm({
+      ...recipeForm,
+      [name]: value,
+    });
+  };
+
   return (
     <div className="create-recipe-view-container">
       <Helmet>
-        <title>CreateRecipeView - Shoddy Natural Heron</title>
+        <title>CreateRecipeView - I Want Food</title>
         <meta
           property="og:title"
-          content="CreateRecipeView - Shoddy Natural Heron"
+          content="CreateRecipeView - I Want Food"
         />
       </Helmet>
-      <Header></Header>
-      <Header3></Header3>
+      <Header />
+      <Header3 />
       <div className="create-recipe-view-hero">
         <div className="create-recipe-view-hero1 heroContainer">
           <span className="create-recipe-view-text">
@@ -30,7 +73,6 @@ const CreateRecipeView = (props) => {
         <div className="create-recipe-view-gallery1">
           <img
             alt="image"
-            /* src="https://play.teleporthq.io/static/svg/default-img.svg" */
             className="create-recipe-view-image"
           />
           <div className="create-recipe-view-container1">
@@ -164,185 +206,41 @@ const CreateRecipeView = (props) => {
                       </svg>
                     </div>
                   </div>
-                  <ul
-                    data-thq="thq-dropdown-list"
-                    className="create-recipe-view-dropdown-list1"
-                  >
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown03 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle05"
+                  <div className="create-recipe-view-feature-card2">
+                    <div className="create-recipe-view-container3">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        className="create-recipe-view-icon10"
                       >
-                        <span className="create-recipe-view-text07">
-                          1 person
-                        </span>
+                        {/* SVG Path for icon */}
+                      </svg>
+                      <div className="create-recipe-view-dropdown-container">
+                        <select
+                          name="servings"
+                          value={recipeForm.servings}
+                          onChange={handleInputChange}
+                          className="create-recipe-view-dropdown"
+                        >
+                          <option value="">How many people can be served?</option>
+                          <option value="1 person">1 person</option>
+                          <option value="2 people">2 people</option>
+                          <option value="3 people">3 people</option>
+                          <option value="4 people">4 people</option>
+                          <option value="5 people">5 people</option>
+                          <option value="6 people">6 people</option>
+                          <option value="7 people">7 people</option>
+                          <option value="8 people">8 people</option>
+                          <option value="9 people">9 people</option>
+                          <option value="10 people">10 people</option>
+                          <option value="12-16 people">12-16 people</option>
+                          <option value="16-20 people">16-20 people</option>
+                          <option value="20-30 people">20-30 people</option>
+                        </select>
                       </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown04 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle06"
-                      >
-                        <span className="create-recipe-view-text08">
-                          2 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown05 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle07"
-                      >
-                        <span className="create-recipe-view-text09">
-                          3 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown06 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle08"
-                      >
-                        <span className="create-recipe-view-text10">
-                          4 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown07 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle09"
-                      >
-                        <span className="create-recipe-view-text11">
-                          5 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown08 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle10"
-                      >
-                        <span className="create-recipe-view-text12">
-                          6 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown09 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle11"
-                      >
-                        <span className="create-recipe-view-text13">
-                          7 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown10 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle12"
-                      >
-                        <span className="create-recipe-view-text14">
-                          8 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown11 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle13"
-                      >
-                        <span className="create-recipe-view-text15">
-                          9 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown12 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle14"
-                      >
-                        <span className="create-recipe-view-text16">
-                          10 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown13 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle15"
-                      >
-                        <span className="create-recipe-view-text17">
-                          12-16 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown14 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle16"
-                      >
-                        <span className="create-recipe-view-text18">
-                          16-20 people
-                        </span>
-                      </div>
-                    </li>
-                    <li
-                      data-thq="thq-dropdown"
-                      className="create-recipe-view-dropdown15 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="create-recipe-view-dropdown-toggle17"
-                      >
-                        <span className="create-recipe-view-text19">
-                          20-30 people
-                        </span>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <span className="create-recipe-view-text20">
-                How many people can be served?
-              </span>
             </div>
             <div className="create-recipe-view-feature-card3">
               <input
@@ -373,9 +271,8 @@ const CreateRecipeView = (props) => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-    </div>
-  )
-}
+    </div>              
+  );
+};
 
-export default CreateRecipeView
+export default CreateRecipeView;

@@ -1,8 +1,10 @@
-// dynamic-ingredient-view.js
+// /views/dynamic-ingredient-view.js
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Footer from '../components/footer';
 import './dynamic-ingredient-view.css';
+
+const apiKey = process.env.REACT_APP_SPOONACULAR_API_KEY;
 
 const DynamicIngredientView = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -17,7 +19,7 @@ const DynamicIngredientView = () => {
 
   const fetchSearchResults = async () => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${searchQuery}&number=10&apiKey=your_api_key_here`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${searchQuery}&number=10&apiKey=${apiKey}`);
       const data = await response.json();
       setSearchResults(data);
     } catch (error) {
@@ -27,7 +29,7 @@ const DynamicIngredientView = () => {
 
   const handleRecipeClick = async (recipeId) => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=your_api_key_here`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`);
       const data = await response.json();
       setIngredientDetails(data);
     } catch (error) {

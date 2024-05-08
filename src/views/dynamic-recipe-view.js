@@ -29,7 +29,7 @@ const DynamicRecipeView = (props) => {
         <div className="dynamic-recipe-view-gallery1">
           <img
             alt="image"
-            /* src="https://play.teleporthq.io/static/svg/default-img.svg" */
+            src="/external/image_unavailable.png"
             className="dynamic-recipe-view-image"
           />
           <div className="dynamic-recipe-view-container1">

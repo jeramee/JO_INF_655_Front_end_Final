@@ -1,138 +1,141 @@
-// views/places.js
-import React, { useEffect } from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
-import Header from '../components/header' // Import the Header component
+import Header from '../components/header'
 import Header3 from '../components/header3'
-import GalleryCard1 from '../components/gallery-card1';
 import Footer from '../components/footer'
+import FeatureCard from '../components/feature-card'
 import './places.css'
 
 const Places = (props) => {
   return (
     <div className="places-container">
       <Helmet>
-        <title>Places - I Want Food</title>
-        <meta property="og:title" content="Places - I Want Food" />
+        <title>Places - Shoddy Natural Heron</title>
+        <meta property="og:title" content="Places - Shoddy Natural Heron" />
       </Helmet>
-      <div className="places-header">
-      <Header></Header>
-      <Header3></Header3>
-      <div className="home-hero heroContainer">
-        <div className="home-container1">
-          <div className="home-container2">
-            <span className="home-hero-sub-heading bodyLarge">
-              <span>
+      <Header />
+      <Header3 />
+            <div>
+              <svg
+                viewBox="0 0 950.8571428571428 1024"
+                className="places-icon04"
+              >
+                <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+              </svg>
+              <svg
+                viewBox="0 0 877.7142857142857 1024"
+                className="places-icon06"
+              >
+                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+              </svg>
+              <svg
+                viewBox="0 0 602.2582857142856 1024"
+                className="places-icon08"
+              >
+                <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
+              </svg>
+            </div>
+      <div className="places-hero">
+        <div className="places-hero1 heroContainer">
+          <div className="places-container1">
+            <div className="places-container2">
+              <span className="places-hero-sub-heading bodyLarge">
                 <span>
                   <span>
-                    Your one-stop destination for all things food-related
+                    <span>
+                      Your one-stop destination for all things food-related
+                    </span>
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
                   </span>
                   <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
                   </span>
                 </span>
                 <span>
                   <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
                   </span>
                   <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
                   </span>
                 </span>
               </span>
-              <span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-            </span>
-            <h1 className="home-hero-heading">
-              <span className="home-text14">
-                Think about time when arrive cave. Have few things: fire, meat,
-                plant. But no know how to start! Confused like mammoth in
-                snowstorm. What do?
-              </span>
-              <span> 🤔</span>
-            </h1>
-            <span className="home-text16">
-              What caveman is saying: &quot;Sometimes when I get home, I look at
-              the few ingredients I’ve got and just can’t figure out where to
-              start with cooking. It’s like my brain just goes blank&quot;
-            </span>
-            <img
-              alt="pastedImage"
-              src="/external/pastedimage-8qme-1100w.png"
-              className="home-pasted-image"
-            />
-            <Link to="/create-recipe-view" className="home-start-here button">
-              Start here
-            </Link>
+              <h1 className="places-hero-heading">
+                Discover a World of Culinary Delights
+              </h1>
+            </div>
+            <div className="places-btn-group">
+              <button className="places-hero-button1 buttonFilled">
+                Choose the place
+              </button>
+            </div>
           </div>
+          <img
+            alt="pastedImage"
+            src="/external/pastedimage-8qme-1100w.png"
+            className="places-pasted-image1"
+          />
         </div>
       </div>
-      <div className="home-hero1"></div>
-      <div className="home-features">
+      <div className="places-features">
         <div className="featuresContainer">
-          <video
-            src="https://youtu.be/6KiZ_u_CkzU?feature=shared"
-            loop="true"
-            poster="https://youtu.be/6KiZ_u_CkzU?feature=shared"
-            preload="none"
-            autoPlay="true"
-            className="home-video"
-          ></video>
-          <div className="home-features1">
-            <div className="home-container3">
-              <span className="home-text17">
-                <span className="home-text18">All we have to offer</span>
+          <div className="places-features1">
+            <div className="places-container3">
+              <span className="places-text20">
+                <span className="places-text21">Travel around the world</span>
                 <br className="Heading"></br>
               </span>
-              <h2 className="home-features-heading heading1">
-                So go out of the cave and start to dig
+              <h2 className="places-features-heading">
+                Explore Exciting Tastes
               </h2>
-              <span className="home-features-sub-heading bodyLarge">
+              <span className="places-features-sub-heading bodyLarge">
                 <span>
                   <span>
                     <span>
@@ -199,54 +202,35 @@ const Places = (props) => {
                 </span>
               </span>
             </div>
-            <div className="home-container4">
-              <div className="home-steps">
-                <div className="home-gallery">
-                  <GalleryCard1
-                    title="USA"
-                    imageAlt=" "
-                    imageSrc="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGZvb2R8ZW58MHx8fHwxNzEyODk4MzkwfDA&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Barbecue"
-                    rootClassName="rootClassName"
-                  ></GalleryCard1>
-                  <GalleryCard1
-                    title="USA"
-                    imageSrc="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxmb29kfGVufDB8fHx8MTcxMjg5ODM5MHww&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Hamburguer"
-                    rootClassName="rootClassName1"
-                  ></GalleryCard1>
-                  <GalleryCard1
-                    title="USA"
-                    imageSrc="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fGZvb2R8ZW58MHx8fHwxNzEyODk4MzkwfDA&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Waffles"
-                    rootClassName="rootClassName2"
-                  ></GalleryCard1>
-                  <GalleryCard1
-                    title="India"
-                    imageSrc="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fGZvb2R8ZW58MHx8fHwxNzEyODk4MzkwfDA&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Salad with mango"
-                    rootClassName="rootClassName3"
-                  ></GalleryCard1>
-                  <GalleryCard1
-                    title="Brazil"
-                    imageSrc="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDd8fGZvb2R8ZW58MHx8fHwxNzEyODk4MzkwfDA&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Strawberry cake"
-                    rootClassName="rootClassName4"
-                  ></GalleryCard1>
-                  <GalleryCard1
-                    title="USA"
-                    imageSrc="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxmb29kfGVufDB8fHx8MTcxMjg5ODM5MHww&amp;ixlib=rb-4.0.3&amp;h=1500"
-                    subtitle="Bread banana and blueberries"
-                    rootClassName="rootClassName5"
-                  ></GalleryCard1>
-                </div>
-              </div>
+            <div className="places-container4">
+              <FeatureCard
+                heading="United State of America"
+                subHeading="Apple pie, Mac n' cheese, Texas Barbecue , Fried Chicken, and much more tipical tastes"
+                rootClassName="feature-card-root-class-name28"
+              ></FeatureCard>
+              <FeatureCard
+                heading="Japan"
+                imageSrc="https://images.unsplash.com/photo-1676286155316-b6098c4fd35a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQ4fHxqYXBhbiUyMGZsYWd8ZW58MHx8fHwxNzEyOTAxOTc0fDA&amp;ixlib=rb-4.0.3&amp;h=200"
+                subHeading="Sushi, Sashimi, Tempura, Tsukemono and Tonkotsu  Ramen"
+                rootClassName="feature-card-root-class-name29"
+              ></FeatureCard>
+              <FeatureCard
+                heading="Brazil"
+                imageSrc="https://images.unsplash.com/photo-1527374071603-76de89807336?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fEJyYXppbHxlbnwwfHx8fDE3MTI5MDEyMjh8MA&amp;ixlib=rb-4.0.3&amp;h=200"
+                subHeading="Feijoada, Vatapá, Pão de queijo, Moqueca e Coxinha"
+                rootClassName="feature-card-root-class-name30"
+              ></FeatureCard>
+              <FeatureCard
+                heading="France"
+                imageSrc="https://images.unsplash.com/photo-1675855508131-798d42b6f1ee?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDYwfHxmcmFuY2UlMjBmbGFnfGVufDB8fHx8MTcxMjkwMjU4N3ww&amp;ixlib=rb-4.0.3&amp;h=200"
+                subHeading="Baguette, Madeleines, Macarons, Crepes and Choux a la creme"
+                rootClassName="feature-card-root-class-name31"
+              ></FeatureCard>
             </div>
           </div>
         </div>
       </div>
       <Footer></Footer>
-    </div>
     </div>
   )
 }

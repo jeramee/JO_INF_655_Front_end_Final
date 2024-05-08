@@ -8,7 +8,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-// Import your components
+// Import components
 import './style.css'
 import Ingredients from './views/ingredients';
 import Profile from './views/profile';

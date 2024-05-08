@@ -117,7 +117,6 @@ Header2.defaultProps = {
   pastedImageAlt: 'pastedImage',
   login: 'Login',
   register: 'Register',
-  //logoSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
   logoAlt: 'image',
   text5: 'About',
   text6: 'Features',
