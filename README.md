@@ -81,7 +81,7 @@ You don't have to ever use eject. The curated feature set is suitable for small 
 
 ### For Debian:
 
-Do this if you have any problems with just a simple install like this:
+Do this in this order if you have any problems with just a simple 'npm install':
 
 # Dependency problem install instructions:
 ## Install CRACO
