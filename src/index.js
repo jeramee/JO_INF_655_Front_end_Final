@@ -1,6 +1,13 @@
 // index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { firebaseConfig } from './firebaseConfig';
+import { initializeApp } from 'firebase/app';
+
+// Initialize Firebase
+//const app = initializeApp(firebaseConfig);
+
+
 import {
   BrowserRouter as Router,
   Route,

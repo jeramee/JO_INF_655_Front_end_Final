@@ -10,10 +10,10 @@ const DynamicRecipeView = (props) => {
   return (
     <div className="dynamic-recipe-view-container">
       <Helmet>
-        <title>DynamicRecipeView - Shoddy Natural Heron</title>
+        <title>DynamicRecipeView - I Want Food</title>
         <meta
           property="og:title"
-          content="DynamicRecipeView - Shoddy Natural Heron"
+          content="DynamicRecipeView - I Want Food"
         />
       </Helmet>
       <Header></Header>

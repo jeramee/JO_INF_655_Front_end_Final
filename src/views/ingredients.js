@@ -12,8 +12,8 @@ const Ingredients = () => {
         <title>Ingredients</title>
         <meta property="og:title" content="Ingredients" />
       </Helmet>
-      <Header />
-      <Header3 />
+      <Header></Header>
+      <Header3></Header3>
       <div className="ingredients-hero">
         <div className="ingredients-hero1 heroContainer">
           <div className="ingredients-container1">

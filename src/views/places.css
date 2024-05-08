@@ -242,6 +242,7 @@
   height: 120px;
   font-size: 32px;
   align-self: center;
+  background-color: #8B4513; /* Adjust the color code to your preferred shade of brown */
   box-shadow: rgb(11, 60, 12) 5px 5px 10px 0px;
   text-align: center;
   font-family: "PrehistoricTimes-Light";
@@ -501,6 +502,7 @@
   }
   .places-hero-button1 {
     width: auto;
+    background-color: #8c4b1dc0; /* Adjust the color code to your preferred shade of brown */
     align-self: flex-start;
     text-align: justify;
   }

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
 import PropTypes from 'prop-types'
 
@@ -9,79 +10,26 @@ import './component1.css'
 const Component1 = (props) => {
   return (
     <div className="component1-container">
-      <div className="component1-hero">
-        <div className="component1-hero1 heroContainer">
-          <div className="component1-container01">
-            <h1 className="component1-hero-heading heading1">
-              {props.heroHeading}
-            </h1>
-            <span className="component1-hero-sub-heading bodyLarge">
-              <span>
-                <span>
-                  <span>Explore a world of culinary delights</span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-            </span>
-            <div className="component1-btn-group">
-              <button className="buttonFilled">{props.heroButton1}</button>
-              <button className="buttonFlat">{props.heroButton2}</button>
+    <div className="component1-hero">
+      <div className="component1-hero1 heroContainer">
+        <div className="component1-container01">
+          <h1 className="component1-hero-heading heading1">
+            {props.heroHeading}
+          </h1>
+          <span className="component1-hero-sub-heading bodyLarge">
+            {/* Sub-heading content */}
+          </span>
+          <div className="component1-btn-group">
+            <div>
+              {/* Link to create-recipe-view.js */}
+              <Link to="/create-recipe-view" className="buttonFilled">
+                {props.heroButton1}
+              </Link>
+              {/* Link to recipes.js */}
+              <Link to="/recipes" className="buttonFlat">
+                {props.heroButton2}
+              </Link>
+            </div>
             </div>
           </div>
         </div>
